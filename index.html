@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gol de Placa | Escola de Futebol</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<style>
+		:root { --green:#087443; --dark:#08251c; --lime:#c9f31d; --cream:#f7f8ef; --text:#19352c; }
+		* { box-sizing:border-box; margin:0; padding:0; }
+		body { color:var(--text); background:var(--cream); font-family:Inter, sans-serif; line-height:1.5; }
+		nav { align-items:center; background:var(--dark); color:white; display:flex; justify-content:space-between; padding:20px 7%; }
+		.logo { align-items:center; display:flex; font-family:'Barlow Condensed'; font-size:28px; font-weight:800; letter-spacing:1px; }
+		.logo span { color:var(--lime); }
+		.ball { align-items:center; background:var(--lime); border-radius:50%; color:var(--dark); display:inline-flex; font-size:18px; height:34px; justify-content:center; margin-right:9px; width:34px; }
+		nav ul { display:flex; gap:30px; list-style:none; }
+		nav a { color:white; font-size:14px; text-decoration:none; }
+		nav a:hover { color:var(--lime); }
+		.nav-button, .hero-button { background:var(--lime); border-radius:5px; color:var(--dark); font-weight:700; padding:12px 20px; text-decoration:none; }
+		.hero { background:linear-gradient(90deg,rgba(4,37,27,.96) 20%,rgba(4,37,27,.48)), url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1800&q=85') center/cover; color:white; min-height:570px; padding:120px 7%; }
+		.hero-content { max-width:620px; }
+		.eyebrow { color:var(--lime); font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+		h1 { font-family:'Barlow Condensed'; font-size:clamp(58px,8vw,104px); line-height:.9; margin:17px 0 25px; text-transform:uppercase; }
+		h1 em { color:var(--lime); font-style:normal; }
+		.hero p { color:#e0e9e3; font-size:18px; margin-bottom:34px; max-width:490px; }
+		.hero-button { display:inline-block; }
+		.link { color:white; margin-left:24px; text-decoration:none; font-weight:600; }
+		.stats { background:var(--lime); display:flex; gap:70px; justify-content:center; padding:25px 7%; }
+		.stat strong { display:block; font-family:'Barlow Condensed'; font-size:34px; line-height:1; }
+		.stat small { font-size:12px; font-weight:600; }
+		.section { margin:auto; max-width:1120px; padding:90px 25px; }
+		.section-header { align-items:end; display:flex; justify-content:space-between; margin-bottom:35px; }
+		h2 { color:var(--dark); font-family:'Barlow Condensed'; font-size:52px; line-height:1; text-transform:uppercase; }
+		h2 span { color:var(--green); }
+		.section-header p { max-width:380px; }
+		.cards { display:grid; gap:22px; grid-template-columns:repeat(3,1fr); }
+		.card { background:white; border-radius:8px; box-shadow:0 8px 25px #153a2b0d; overflow:hidden; }
+		.card img { display:block; height:190px; object-fit:cover; width:100%; }
+		.card-content { padding:22px; }
+		.card h3 { color:var(--dark); font-family:'Barlow Condensed'; font-size:28px; text-transform:uppercase; }
+		.card p { color:#607269; font-size:14px; margin-top:8px; }
+		.card a { color:var(--green); display:inline-block; font-size:13px; font-weight:700; margin-top:17px; text-decoration:none; }
+		.cta { background:var(--green); color:white; padding:65px 7%; text-align:center; }
+		.cta h2 { color:white; }
+		.cta p { margin:15px auto 28px; max-width:500px; }
+		footer { background:var(--dark); color:#b9c9c0; display:flex; justify-content:space-between; padding:25px 7%; font-size:13px; }
+		@media(max-width:700px) { nav ul,.nav-button { display:none; } nav { padding:18px 5%; } .hero { min-height:520px; padding:90px 7%; } .stats { gap:20px; justify-content:space-around; } .stat { text-align:center; } .stat strong { font-size:27px; } .cards { grid-template-columns:1fr; } .section-header { display:block; } .section-header p { margin-top:15px; } footer { display:block; text-align:center; } }
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo"><span class="ball">⚽</span> GOL <span>DE PLACA</span></div>
+		<ul><li><a href="#sobre">Sobre nós</a></li><li><a href="#treinos">Treinos</a></li><li><a href="#contato">Contato</a></li></ul>
+		<a class="nav-button" href="#contato">Agende uma aula</a>
+	</nav>
+
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<div class="eyebrow">Escola de futebol • Desde 2012</div>
+				<h1>Seu talento<br>em <em>campo.</em></h1>
+				<p>Treinamento de verdade para quem quer evoluir, se divertir e viver o futebol dentro e fora das quatro linhas.</p>
+				<a class="hero-button" href="#contato">Quero fazer parte</a><a class="link" href="#treinos">Conheça os treinos →</a>
+			</div>
+		</section>
+		<div class="stats"><div class="stat"><strong>+1.200</strong><small>alunos formados</small></div><div class="stat"><strong>12 anos</strong><small>de experiência</small></div><div class="stat"><strong>08–17</strong><small>anos de idade</small></div><div class="stat"><strong>5x</strong><small>por semana</small></div></div>
+
+		<section class="section" id="treinos">
+			<div class="section-header"><h2>Treine como<br><span>campeão</span></h2><p>Metodologia completa, professores preparados e um ambiente que transforma paixão em evolução.</p></div>
+			<div class="cards">
+				<article class="card"><img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=700&q=80" alt="Crianças treinando futebol"><div class="card-content"><h3>Base & formação</h3><p>Fundamentos, coordenação e trabalho em equipe para os primeiros passos.</p><a href="#contato">Saiba mais →</a></div></article>
+				<article class="card"><img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=700&q=80" alt="Jogador conduzindo a bola"><div class="card-content"><h3>Performance</h3><p>Treinos intensos para desenvolver técnica, velocidade e inteligência de jogo.</p><a href="#contato">Saiba mais →</a></div></article>
+				<article class="card"><img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=700&q=80" alt="Time de futebol comemorando"><div class="card-content"><h3>Futebol feminino</h3><p>Um espaço seguro e inspirador para meninas brilharem em campo.</p><a href="#contato">Saiba mais →</a></div></article>
+			</div>
+		</section>
+		<section class="cta" id="contato"><h2>Pronto para marcar seu gol?</h2><p>Agende uma aula experimental gratuita e descubra o seu potencial.</p><a class="hero-button" href="mailto:contato@goldeplaca.com.br">Fale com a gente</a></section>
+	</main>
+	<footer><span>© 2024 Gol de Placa</span><span>Onde o jogo começa.</span></footer>
+</body>
+</html>
